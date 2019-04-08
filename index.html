@@ -11,6 +11,9 @@
 
     <style>
       body{
+        background-image: url("img/nebula.png");
+        background-repeat: no-repeat;
+        background-size: cover;
         background-color: #000;
       }
       .center{
@@ -27,7 +30,7 @@
   </head>
   <body>
     <div id="foreground" class="center">
-      <h1 id="name" style="color:white; opacity:0.2;">Ling Zhang</h1>
+      <h1 id="name" style="color:white; opacity:0.8;">Ling Zhang</h1>
     </div>
 
     <!-- Optional JavaScript -->
@@ -39,7 +42,7 @@
     <script>
       $( document ).ready(function() {
         function startAnimation() {
-          const name = $('#name');
+          const name = $('#foreground');
           name.animate({
             opacity: 1,
           }, 1000, function() {
